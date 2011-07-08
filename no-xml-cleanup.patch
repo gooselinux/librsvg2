@@ -1,0 +1,12 @@
+diff -up librsvg-2.26.0/rsvg-base.c.no-xml-cleanup librsvg-2.26.0/rsvg-base.c
+--- librsvg-2.26.0/rsvg-base.c.no-xml-cleanup	2009-02-19 18:39:05.000000000 -0500
++++ librsvg-2.26.0/rsvg-base.c	2010-04-01 18:25:16.805728133 -0400
+@@ -1802,8 +1802,6 @@ rsvg_term (void)
+ #ifdef HAVE_SVGZ
+     gsf_shutdown ();
+ #endif
+-
+-    xmlCleanupParser ();
+ }
+ 
+ void
